@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    class Tempurate{
+        celsius;
+
+        constructor(celsius) {
+            this.celsius = celsius;
+
+        }
+
+        changeF(){
+            return (9/5 * celsius) + 32;
+        }
+        changeK(){
+            return celsius +273.15;
+        }
+    }
+    var celsius = 25;
+    var temp = new Tempurate(celsius);
+    var farenheit = temp.changeF();
+    var kenvin = temp.changeK();
+
+    document.writeln('nhiệt độ Farenheit là: '+farenheit +'<br>');
+    document.writeln('nhiệt độ Kenvin là: '+kenvin);
+</script>
